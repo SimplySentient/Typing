@@ -42,7 +42,7 @@ Local $lastPhrase = '' ; avoid repeats
 
 Local $displayTime = 600
 
-Local $wordLists[5] ; array of arrays
+Local $wordLists[6] ; array of arrays
 
 Local $accuracyRecord[0]
 
@@ -243,10 +243,12 @@ Func _InitiateText()
 EndFunc   ;==>_InitiateText
 
 Func _LoadWordLists()
-	For $i = 0 To 4
+	For $i = 0 To 5
 		$temp = FileReadToArray($DATA_DIR & '\level' & $i & '.txt')
 		$wordLists[$i] = $temp
 	Next
+
+	;_ArrayDisplay($wordLists)
 EndFunc   ;==>_LoadWordLists
 
 

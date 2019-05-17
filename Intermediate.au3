@@ -110,7 +110,7 @@ Func _GenerateSentence()
 
 ;~ 	$new = 'This is a really long sentence and maybe nobody will every type it but me.'
 
-	$currentSentence = $new
+	$currentSentence = StringStripWS($new, 3)
 	Return $currentSentence
 EndFunc
 

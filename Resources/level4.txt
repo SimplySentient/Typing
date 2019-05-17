@@ -260,7 +260,6 @@ run
 rune
 rung
 runt
-rutic
 sack
 sacks
 sacrament
